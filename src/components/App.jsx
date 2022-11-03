@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from './Header';
-import Form from './Form';
+import { Route, Routes } from 'react-router-dom';
+import Login from '../pages/Login';
+import Home from '../pages/Home';
 
 function App(){
     return (
-        <div className='grid'>
-            <div><Header /></div>
-            <div><Form /></div>  
-        </div>
+            <Routes>
+                <Route path="/" element={<Login />}    />
+                <Route path="/login" element={<Home />} />
+            </Routes>
     );
 }
 export default App;
