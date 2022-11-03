@@ -3,7 +3,7 @@ import { Container, Table } from 'react-bootstrap';
 
 function DashboardTable() {
     return(
-        <Container>
+        
      <Table striped bordered hover  responsive>
       <thead>
         <tr>
@@ -199,7 +199,7 @@ function DashboardTable() {
         
       </tbody>
     </Table>
-        </Container>
+       
     );
 }
 
